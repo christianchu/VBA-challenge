@@ -1,0 +1,7 @@
+I had lots of challenges with this assignment. 
+Primarily isses with identifying the max and min values within the for loop conditional if statement. 
+Spent most of my time trying to use worksheetfunction.vlookup and worksheetfunction.match. Had more success with vlookup but could only use a range. 
+Range would not accept the i variable which I could understand would break the for loop.
+
+Overall it was challenging and great to learn from. Had fun looking at documentation in stack overflow where people would ask similar questions.
+
