@@ -34,6 +34,10 @@ ws.Cells(2, 15).Value = "Greatest % Increase"
 ws.Cells(3, 15).Value = "Greatest % Decrease"
 ws.Cells(4, 15).Value = "Greatest Total Volume"
 
+ws.Cells(1, 16).Value = "Ticker"
+ws.Cells(1, 17).Value = "Value"
+
+
     For i = 2 To LastRow
         'conditional if ticker changes'
         If ws.Cells(i + 1, 1).Value <> ws.Cells(i, 1).Value Then
@@ -72,6 +76,8 @@ ws.Cells(4, 15).Value = "Greatest Total Volume"
 
         End If
     Next i
+    
+    ws.Cells(4, 17).Value = WorksheetFunction.Max(Range("L:L").Value)
     
     'WorksheetFunction.Max (Cells(i, 2).Value)
     'WorksheetFunction.Min (Cells(i, 2).Value)
